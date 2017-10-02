@@ -8,6 +8,8 @@ fml = val.Formula1
 Wscript.echo fml
 Set val = objSheet2.Range(rng).Validation
 val.Delete
+' expression.Add(Type, AlertStyle, Operator, Formula1, Formula2)
+' where type 3 means drop-down list, see https://msdn.microsoft.com/en-us/vba/excel-vba/articles/xldvtype-enumeration-excel
 val.Add 3,,,fml
 End Sub
 
